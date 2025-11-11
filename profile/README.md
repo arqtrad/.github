@@ -81,7 +81,7 @@ que estruturam os sites dos Documentários.
   e se for docente ou discente de uma escola ou universidade,
   pode [criar uma conta educacional] com alguns recursos a mais.
 
-[**Discussões**]: https://github.com/arqtrad/.github/discussions
+[**Discussões**]: https://github.com/orgs/arqtrad/discussions
 
 [criar uma conta gratuita no GitHub]: https://github.com
 
