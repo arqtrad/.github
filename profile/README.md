@@ -141,6 +141,7 @@ para a estruturação e apresentação do conteúdo:
 
 - 🎈 [Eleventy](https://11ty.dev) para renderização dos sites;
 - 🥾 [Bootstrap](https://getbootstrap.com) como base para os estilos de apresentação dos sites;
+- 📋 [Table of contents plugin for Bootstrap](https://afeld.github.io/bootstrap-toc/);
 - 🗺️ [Leaflet.js](https://leafletjs.com/) para apresentação dos mapas;
 - ⏳ [Knightlab TimelineJS 3](https://timeline.knightlab.com/) para apresentação das linhas do tempo;
 - 🇺🇳 [Country Code Emoji](https://www.npmjs.com/package/country-code-emoji) para mostrar emojis com as bandeiras nacionais;
