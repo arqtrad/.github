@@ -2,9 +2,11 @@
 
 ## Sumário ##
 
-- [Conteúdo](#conteúdo)
-- [Como contribuir](#como-contribuir)
-- [Sistemas de informação](#sistemas-de-informação)
+1. [Conteúdo](#conteúdo)
+2. [Metodologia](#metodologia)
+3. [Antes de começar](#antes-de-começar)
+4. [Como contribuir](#como-contribuir)
+5. [Sistemas de informação](#sistemas-de-informação)
 
 ## Conteúdo ##
 
