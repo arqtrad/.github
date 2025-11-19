@@ -117,8 +117,8 @@ que estruturam os sites dos Documentários.
 ## Como contribuir ##
 
 As contribuições de conteúdo são feitas nos
-[subprojetos](#subprojetos) referentes a cada categoria de
-edificações.
+[subprojetos](https://github.com/orgs/arqtrad/repositories)
+referentes a cada categoria de edificações.
 Para contribuir diretamente com este portal,
 inicie uma discussão com os administradores.
 
