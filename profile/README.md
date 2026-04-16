@@ -1,5 +1,18 @@
 # Documentário da Arquitetura Tradicional luso-brasileira #
 
+Uma base de dados de edificações e sítios tradicionais
+em formato de texto simples, em acesso aberto e podendo ser transposta
+para apresentação online e análise por
+*scripts* e programas especializados.
+
+Projeto financiado pelo CNPq 2025–2028, processo 406601/2025-9.
+
+- Coordenação : [Pedro P. Palazzo](https://github.com/p3palazzo)
+- Execução : [Universidade de Brasília](http://unb.br), laboratório Vereda
+- Equipe : NUTHAU, Universidade Federal de Uberlândia e Universidade 
+  Regional do Cariri
+- Colaboradores em diversas outras instituições e localidades
+
 ## Sumário ##
 
 1. [Conteúdo](#conteúdo)
@@ -40,30 +53,63 @@ O projeto está estruturado nas seguintes partes:
 - [Portal do projeto](https://github.com/arqtrad/arquitetura),
   compreendendo a apresentação da pesquisa, da equipe e de
   abordagens específicas;
-- [Casas](https://github.com/arqtrad/casa-data);
-- [Arquitetura cívica](https://github.com/arqtrad/civica-data);
+- [Casas](https://github.com/arqtrad/casa)
+  (em preenchimento);
+- [Arquitetura cívica](https://github.com/arqtrad/civica);
 - Arquitetura religiosa (previsto);
 - Cidades (em elaboração inicial);
 - [Thesaurus](https://github.com/arqtrad/thesaurus)
   (em elaboração inicial);
-- [Desenhos técnicos](https://github.com/arqtrad/dwg-data)
+- [Desenhos técnicos](https://github.com/arqtrad/desenho)
   (em elaboração inicial).
 
 
 ## Metodologia ##
 
+Este projeto adota duas premissas :
+
+- Cadastramento das informações em formato de texto simples estruturadas 
+  segundo a especificação YAML
+  ([explicação introdutória aqui][1] e [tutorial técnico aqui][2]),
+  de modo a garantir maior acessibilidade, portabilidade, durabilidade e
+  facilidade de tradução dos dados para diferentes formatos ; e
+
+- Uso de ferramentas e plataformas em software livre, visando a
+  garantir que os dados permaneçam sempre abertos e legíveis, e
+  protegendo o projeto contra a irregularidade no financiamento público
+  da pesquisa / investigação.
+
 O ponto de partida do cadastramento de edificações e sítios nos 
-Documentários foi o formato [DublinCore][] de inserção de metadados.
+Documentários foi o formato [DublinCore][3] de inserção de metadados.
 Atualmente, estamos no processo de enriquecer as fichas adaptando-as 
-para o padrão [CIDOC–CRM][] de cadastramento de objetos, agentes e 
-eventos.
-Em tempo, será lançada uma interfaz de preenchimento das fichas para 
-auxiliar o cadastramento de dados por usuários sem expertise com código, 
+para o formato [LIDO][4] de descrição de objetos,
+criado pelo Conselho Internacional de Museus (ICOM) com base no seu 
+próprio padrão [CIDOC–CRM][5] de documentação.
+
+O LIDO é especialmente adequado para registrar informações sobre
+bens imóveis em comparação com outros sistemas de cadastramento 
+museológico.
+Existe um [manual de preenchimento][6] (em alemão) associado a
+[exemplos de fichas][7] mostrando a aplicação da maior parte da 
+especificação LIDO.
+
+Em tempo, será lançada uma interface de preenchimento das fichas para 
+auxiliar o cadastramento de dados por usuários sem expertise digital,
 e também para evitar erros de preenchimento.
 
-[DublinCore]: https://dublincore.org
+[1]: https://www.linkedin.com/pulse/xml-json-markdown-e-yaml-explicação-simples-vitor-martins-ufv5e
 
-[CIDOC–CRM]: https://cidoc-crm.org/
+[2]: https://www.yaml.info/learn/index.html
+
+[3]: https://dublincore.org
+
+[4]: https://icom-documentation.mini.icom.museum/working-groups/lido/lido-overview/
+
+[5]: https://cidoc-crm.org/
+
+[6]: http://dx.doi.org/10.11588/arthistoricum.1407
+
+[7]: https://doi.org/10.11588/DATA/LKORVT
 
 
 ## Antes de começar
@@ -136,16 +182,24 @@ ferramentas seguintes:
 4. É recomendável um domínio básico do funcionamento do Git
    para maior conveniência na edição das fichas.
 
+
+
 ## Sistemas de informação
 
 Atualmente, os Documentários utilizam os seguintes sistemas
 para a estruturação e apresentação do conteúdo:
 
+- 🆔 [Open Location Codes](https://github.com/google/open-location-code) 
+  para identificar os bens sem ambiguidade;
+- 🗺️ [Global Building Atlas](https://github.com/zhu-xlab/GlobalBuildingAtlas)
+  para padronizar a locação das edificações;
+- 🌎 [QGIS](https://qgis.org) com o plugin
+  [Lat Lon Tools](https://github.com/hamiltoncj/qgis-latlontools-plugin)
+  para georreferenciar e gerar os códigos de locação;
 - 🎈 [Eleventy](https://11ty.dev) para renderização dos sites;
 - 🥾 [Bootstrap](https://getbootstrap.com) como base para os estilos de apresentação dos sites;
 - 📋 [Table of contents plugin for Bootstrap](https://afeld.github.io/bootstrap-toc/);
-- 🆔 [Universal Building ID](https://github.com/pnnl/buildingid) para identificar os bens sem ambiguidade;
-- 🗺️ [Leaflet.js](https://leafletjs.com/) para apresentação dos mapas;
+- 🍃 [Leaflet.js](https://leafletjs.com/) para apresentação dos mapas;
 - ⏳ [Knightlab TimelineJS 3](https://timeline.knightlab.com/) para apresentação das linhas do tempo;
 - 🇺🇳 [Country Code Emoji](https://www.npmjs.com/package/country-code-emoji) para mostrar emojis com as bandeiras nacionais;
 - 📜 [js-yaml](https://www.npmjs.com/package/js-yaml) para tornar os metadados mais legíveis;
