@@ -189,13 +189,23 @@ ferramentas seguintes:
 Atualmente, os Documentários utilizam os seguintes sistemas
 para a estruturação e apresentação do conteúdo:
 
+### Conteúdo
+
 - 🆔 [Open Location Codes](https://github.com/google/open-location-code) 
   para identificar os bens sem ambiguidade;
 - 🗺️ [Global Building Atlas](https://github.com/zhu-xlab/GlobalBuildingAtlas)
-  para padronizar a locação das edificações;
+  para padronizar a locação das edificações não cadastradas no SICG;
 - 🌎 [QGIS](https://qgis.org) com o plugin
   [Lat Lon Tools](https://github.com/hamiltoncj/qgis-latlontools-plugin)
   para georreferenciar e gerar os códigos de locação;
+- 📚 [Zotero](https://zotero.org) para cadastrar fontes primárias e referências
+  bibliográficas;
+- 🔖 Plugin [Better BibTeX](https://retorque.re/zotero-better-bibtex) para Zotero
+  para gerar os identificadores das citações e exportar bibliografias.
+
+
+### Apresentação dos sites
+
 - 🎈 [Eleventy](https://11ty.dev) para renderização dos sites;
 - 🥾 [Bootstrap](https://getbootstrap.com) como base para os estilos de apresentação dos sites;
 - 📋 [Table of contents plugin for Bootstrap](https://afeld.github.io/bootstrap-toc/);
